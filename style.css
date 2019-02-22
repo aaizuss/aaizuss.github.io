@@ -1,7 +1,7 @@
 .wrap {
-  max-width: 640px;
+  max-width: 730px;
   padding: 20px;
-  margin: 0 auto;;
+  margin: 0 auto;
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 h2 {
   font-family: 'Bitter', serif;
-  color: #272238 /* maybe not? */
+  color: #272238;
 }
 
 h3 {
@@ -58,7 +58,7 @@ body {
   background-color: #fafafa;
 }
 
-p {
+p, li {
   font-family: 'Inconsolata', monospace;
 }
 
@@ -68,6 +68,12 @@ p {
   line-height: 1.6em;
   color: #353238;
   margin-bottom: 1.5em
+}
+
+.text-content li {
+ color: #353238;
+ line-height: 1.5em;
+ margin-bottom: 1em;
 }
 
 .social {
