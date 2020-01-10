@@ -1,2 +1,2 @@
 ### Hello
-this is just my homepage - it's a work in progress
+this is just my homepage - I rarely update it 😬

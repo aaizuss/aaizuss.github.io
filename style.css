@@ -21,6 +21,15 @@ h3 {
   color: #272238;
 }
 
+h4 {
+  font-family: 'Bitter', serif;
+}
+
+.update-note {
+  text-align: center;
+  color: #9a95ab;
+}
+
 a {
   font-family: 'Inconsolata', monospace;
   position: relative;
