@@ -63,10 +63,10 @@ footer {
 
 @media (min-width: 500px) {
   .footer>.container {
-      display:-ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
+    display:-ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .footer p {
@@ -147,7 +147,7 @@ a .no-underline {
 }
 
 main p, main ul {
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 
 .work {
@@ -200,24 +200,25 @@ header {
   text-align: center;
   align-items: center;
   padding-bottom: 80px;
+  /* flex-wrap: wrap; */
 }
 
 @media (min-width: 500px) {
   .header {
-      padding:20px;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      text-align: left;
-      -ms-flex-align: start;
-      align-items: flex-start;
+    padding:20px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: left;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 
 @media (min-width: 750px) {
   .header {
-      padding-top:40px;
+    padding-top:40px;
   }
 }
 
@@ -246,15 +247,15 @@ header {
 
 @media (min-width: 500px) {
   .header__links {
-      -ms-flex-pack:start;
-      justify-content: flex-start;
+    -ms-flex-pack:start;
+    justify-content: flex-start;
   }
 }
 
 @media (min-width: 500px) {
   .header__title {
-      font-size:2.5rem;
-      margin: 0;
+    font-size:2.5rem;
+    margin: 0;
   }
 }
 
@@ -274,8 +275,8 @@ header {
 
 @media (min-width: 500px) {
   .header__nav {
-      -ms-flex-pack:start;
-      justify-content: flex-start;
+    -ms-flex-pack:start;
+    justify-content: flex-start;
   }
 }
 
@@ -295,7 +296,7 @@ header {
 
 @media (min-width: 750px) {
   .header__photo {
-      max-width: 400px;
+    max-width: 400px;
   }
 }
 
