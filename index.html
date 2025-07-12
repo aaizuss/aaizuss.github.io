@@ -13,8 +13,8 @@
       <h1 class="header__title">
         Amanda Aizuss
       </h1>
-      <p class="header__profession">Software Eng at 8th Light</p>
-      <p class="header__tagline">I like vegetables, type safety, walking fast, women's soccer, and living near large bodies of water.</p>
+      <p class="header__profession">Staff Software Engineer at Gusto</p>
+      <p class="header__tagline">I like vegetables, type safety, long hikes, women's soccer, and being near a large body of water.</p>
       <ul class="header__links list-inline">
         <li>
           <a class="simple-hover" href="mailto:aaizuss@gmail.com?subject= Hi Amanda">
@@ -37,20 +37,10 @@
           </a>
         </li>
       </ul>
-      <nav>
-        <ul class="header__nav list-inline">
-          <li>
-            <a data-scroll="data-scroll" href="#about">About</a>
-          </li>
-          <li>
-            <a data-scroll="data-scroll" href="#work">Work</a>
-          </li>
-        </ul>
-      </nav>
     </div>
     <div class="header__photo">
       <figure class="header__photo-wrapper">
-        <img src="assets/img/me.jpg" alt="me smiling with my mouth open at the beach">
+        <img src="assets/img/me.jpeg" alt="me smiling with my mouth open at the beach">
       </figure>
     </div>
   </header>
@@ -60,197 +50,22 @@
         <h2 class="section-title">About</h2>
         <p>
           Hi! I'm Amanda. I'm a software engineer living in Los Angeles ☀️🌴. 
+          I work on the Ledger team at <a href="http://www.gusto.com" target="_blank">Gusto</a>.
           In 2017, I graduated from <a href="https://www.uchicago.edu/" target="_blank">The University of Chicago</a> with a degree in Computer Science.
           My favorite computer science courses there were Programming Languages, Usable Security, and iOS Development.
-          Now, I work at a software consultancy called <a href="https://8thlight.com" target="_blank">8th Light</a>.
           I write code with empathy for the people who will read and contribute to it, which means I strive to write durable, expressive, well-tested code.
         </p>
         <p>
-          At UChicago, I lead the <a href="https://compileher.com/" target="_blank">compileHer</a>
-          curriculum team. CompileHer introduces middle school girls to programming and inspires them to explore how they can use technology. As someone who has always been
-          passionate and curious about technology but did not initially feel qualified enough to pursue computer science, compileHer's mission is extremely important to me.
-        </p>
-        <p>
-          At 8th Light, I've worked on projects
-          in Swift (iOS), Ruby (Rails), Javascript/Typescript (React), Python (Django), and Elixir (Phoenix), and I'm excited to continue to learn
-          new skills and help a variety of companies build better software. I'm a generalist, but I want to develop backend expertise. I have years of experience as a
-          remote engineer (in some cases as the only remote engineer on the team).
-          Read more about <a data-scroll="data-scroll" href="#work">what I've worked on</a>.
+          My first software engineering job was at <a href="https://www.8thlight.com/" target="_blank">8th Light</a>, a software consultancy. There, I worked on projects
+          in Swift (iOS), Ruby (Rails), Javascript/Typescript (React), Python (Django), Go, and Elixir (Phoenix) as a generalist.
         </p>
         <p>
           I thrive in highly collaborative environments and like to pair program when I get stuck making a decision or want to help a teammate, but I prefer coding solo.
           I enjoy participating in thoughtful discussions about architectural decisions and API design. I write automated tests to code and refactor with confidence and to understand an unfamiliar codebase.
         </p>
         <p>
-          I like vegetables, type safety, walking fast, women's soccer, and living near large bodies of water.
           I used to make <a href="https://youtube.com/italkapple" target="_blank">YouTube videos</a>
-          about software and technology in general (most of them are private now, but I've left a few up because it was a huge part of my life from middle school through high school).</p>
-      </div>
-    </section>
-    <section id="work" class="work">
-      <div class="container">
-        <h2 class="section-title">Work</h2>
-        <dl>
-          <dt class="work__item-summary">
-            <h3 class="work__title">Fullstack Development for Enterprise Project Management Web App</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology rails">Ruby on Rails</span>
-              <span class="work__technology react">GraphQL</span>
-              <span class="work__technology react">React</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              My team is designing and implementing a new internal authorization framework and overhauling user-facing permissions controls to give users
-              more granular control over who can perform various actions in the app and via the API. This is a challenging task because the app is 10 years old, and we need to preserve old, complex behavior as we
-              develop the new framework. Authorization logic used to live in various layers of the app and was coupled to domain logic; there was a lot of duplicated logic and dead code.
-              I collaborated with our team lead to develop an abstraction that consolidates old permissions logic in a policy object.
-            </p>
-            <p>
-              The framework has a simple, expressive interface for configuring permissions and checking authorization. Our external and internal APIs used to be very inconsistent about what was returned
-              when authorization failed, and I implemented a way to dynamically generate appropriate HTTP status codes and more specific messages about what permissions need to be granted (when it is appropriate to reveal those details).
-              I led team discussions about our strategy for testing authorization behavior for our API endpoints and led the team's effort to modernize our Rails specs in RSpec.
-            </p>
-            <p>
-              I built user-facing project accounting features in React and their supporting APIs in rails.
-              I converted most of our existing React specs from Enzyme to React Testing Library in order to test behavior instead of implementation details. This made refactoring easier.
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">Physical Therapy App</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology ios">iOS/Swift</span>
-              <span class="work__technology graphql">GraphQL</span>
-              <span class="work__technology dotnet">.NET</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              Swift is my favorite language, so I was thrilled that I got to help build this physical therapy app with it! The app allows patients to complete exercises at home and track their recovery progress, and it motivates them with achievements and reminders.
-              The app queries data from the .NET backend via a GraphQL API. I touched nearly every feature, but I was mostly responsible for implementing the Exercise Program in iOS.
-              This allows patients to view their exercise schedule prescribed by their clinician, watch looping videos, learn how to do each exercise and why they are important, mark which exercises they complete, leave
-              feedback about the exercises, and earn achievements for following their program. I also buit an interactive onboarding flow to help patients learn about the home exercise program.
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">Ethereum Blockchain Tool</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology golang">Go</span>
-              <span class="work__technology postgres">Postgres</span>
-              <span class="work__technology ethereum">Ethereum</span>
-              <span class="work__technology">Solidity</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              I helped build a caching layer for the Ethereum blockchain. The tool empowers developers to query their Ethereum dapp's current and historical data
-              on the blockchain through conventional SQL queries. My work involved creating complex database migrations and queries.
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">Frontend Development for Data Visualization App that Encourages Civic Engagement</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology react">React (with Flow typing, Redux state management)</span>
-              <span class="work__technology express">Express</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              I was a frontend developer for a webapp that aggregates data from a variety of government agencies and visualizes that data so that citizens can understand what the government does.
-              I added the ability to view more granular (state and local) data. The app was a few years old when I started and already suffered from a lot of tech debt. My work included:
-              <ul>
-                <li>
-                  Refactoring existing React components to understand a different data structure, adding types with Flow, and adding unit tests throughout the codebase
-                </li>
-                <li>
-                  Refactoring Redux state management to handle fetching/storing/selecting new data and adding unit tests for new and existing actions, reducers, and selectors
-                </li>
-                <li>
-                  Creating/styling new React components to allow users to view different types of charts, transitioning from Radium to styled-components
-                </li>
-                <li>
-                  Working with our API partner to define new ways to model the data and creating a mock API in Express and CouchDB to
-                  use during development so we don't need to wait for the API partner to build new features
-                </li>
-              </ul>
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">Fullstack development for Background Screening App</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology elixir">Elixir/Phoenix</span>
-              <span class="work__technology react">React (Typescript)</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              I integrated a third party background check API in the client's candidate screening app. Now, the app can query and parse the api to provide a simpler user experience
-              for the investigators and candidates who use the app. I created new React components that display the results from the additional background screenings
-              and allow investigators and candidates to view and comment on the results.
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">Backend for Nutritional Supplement Startup</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology django">Python/DjangoREST</span>
-              <span class="work__technology react">React (Typescript)</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              I pair programmed to design and develop the API for the company's ecommerce platform.
-              We built a recommendation engine, which takes user responses to a conversational bot, applies a fully configurable set of rules, and returns a product recommendation.
-              I implemented the checkout process, which involved integrating with stripe to securely process payment information and manage subscriptions.
-              I also modeled orders and integrated with the manufacturer's API to submit orders for production and shipping.
-              I added support for transactional emails for order confirmation, shipping status, and more. These emails are sent asynchronously via Celery tasks.
-              On the frontend, I implemented a complex page in TypeScript that allows users to add, remove, and edit the quantities of ingredients in their recommended order.
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">iOS App for Medical Device Company</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology ios">iOS (Objective C)</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              I worked on an app that uses bluetooth to connect to a medical device and display usage data. The device records the time of use and the amount of prescription administered.
-              I added support for HealthKit to the app and built the Today Widget, which summarizes daily usage information in a convenient view.
-              Additionally, I added account management features including new views, logic to support logging into multiple accounts, and account switching with the iOS Keychain.
-              I added support for all device sizes and orientations with Autolayout for many existing screens and built views to alert users when there is no wifi or bluetooth during the device pairing process.
-            </p>
-          </dd>
-
-          <dt class="work__item-summary">
-            <h3 class="work__title">Sales Terminal Webapp for Nonprofit</h3>
-            <p class="work__company">8th Light</p>
-            <div class="work__technologies">
-              <span class="work__technology rails">Ruby (Sinatra)</span>
-              <span class="work__technology react">Javascript</span>
-            </div>
-          </dt>
-          <dd class="work__item-description">
-            <p>
-              I developed a mobile-first web app that allows salespeople to take donations on their mobile phones.
-              I used Stripe to handle transactions and the Google Identity Platform to allow salespeople to access the app.
-              Administrators can generate reports with information about all transactions.
-            </p>
-          </dd>
-        </dl>
-
+          about software and technology in general (most of them are private now, but I've left a few up because it was a huge part of my life from middle school through my first year of college).</p>
       </div>
     </section>
   </main>
